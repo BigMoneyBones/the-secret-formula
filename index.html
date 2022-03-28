@@ -7,14 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Secret Formula</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
     <body>
-    
 
-        
+        <form id="alertForm">
+            <h2>The Alerter</h2>
+                <div class="box">
+                    <input id="alertInput" type="text" autocomplete="off" placeholder="Enter your name"/>
+                </div>
+
+                <br />
+
+                <div>
+                    <input id="alertSubmitButton" type="submit"/>
+                </div>
+        </form>
+
+        <br />
+
+        <form id="sandwichForm">
+            <h2>Sandwich Builder</h2>
+                <div class="sandwich">
+                    <!-- BREAD -->
+                    <label class="bread">White Bread</label>
+                    <input type="checkbox" id="whiteBread" class="option-input checkbox" />
+                    <br />
+                    <label class="bread">Wheat Bread</label>
+                    <input type="checkbox" id="wheatBread" class="option-input checkbox" />
+                    <br />
+                    <label class="bread">Rye Bread</label>
+                    <input type="checkbox" id="ryeBread" class="option-input checkbox" />
+                    <br />
+                    <!-- Ingredients -->
+                    <label class="ingredient">Lettuce</label>
+                    <input type="checkbox" id="lettuce" class="option-input checkbox" />
+                    <br />
+                    <label class="ingredient">Tomato</label>
+                    <input type="checkbox" id="tomato" class="option-input checkbox" />
+                    <br />
+                    <label class="ingredient">Onion</label>
+                    <input type="checkbox" id="onion" class="option-input checkbox" />
+                    <br />
+                    <label class="ingredient">Bell Peppers</label>
+                    <input type="checkbox" id="bellPepper" class="option-input checkbox" />
+                    <br />
+                    <!-- MEATS -->
+                    <label class="meat">Ham</label>
+                    <input type="checkbox" id="ham" class="option-input checkbox" />
+                    <br />
+                    <label class="meat">Turkey</label>
+                    <input type="checkbox" id="turkey" class="option-input checkbox" />
+                    <br />
+                    <label class="meat">Chicken</label>
+                    <input type="checkbox" id="chicken" class="option-input checkbox" />
+                    <br />
+                    <input id="sandwichSubmitButton" type="submit"/>
+                </div>
+        </form>
+
+        <br />
+
+        <form id="appointmentForm">
+
+            <h2>Haircut Appointment Scheduler</h2>
+            <label>Please choose a date</label>
+            <input type="date" id="date" placeholder="Choose your date" />
+            <br />
+            <input type="text" id="barber" placeholder="Choose your barber" />
+            <br />
+            <label>Short Hair</label>
+            <input type="radio" id="shortHair" name="hairStyle" class="option-input radio" />
+            <br />
+            <label>Long Hair</label>
+            <input type="radio" id="longHair" name="hairStyle" class="option-input radio" />
+            <br />
+            <button class="button" type="submit">Submit Appointment</button>
+            <br />
+
+        </form>
+
+        <br />
+
+        <form id="createAccountForm">
+
+            <h2>Create Account</h2>
+
+            <input type="text" id="userName" placeholder="Enter desired username" />
+            <br />
+            <input type="email" id="userEmail" placeholder="Enter your email" />
+            <br />
+            <input type="password" id="userPassword" placeholder="Enter desired password" />
+            <br />
+            <input type="password" id="confirmPassword" placeholder="Confirm password" />
+            <br />
+            <button class="button" type="submit">Create Account</button>
+            <br />
+
+
+        </form>
+
         <script src="main.js"></script>
-        
+
     </body>
     
 </html>
